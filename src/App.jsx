@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import './App.css'
 
 export default function App(){
 
@@ -26,7 +27,7 @@ useEffect(() => {
       <input type="color" value={color1} onChange={changeColor1}/>
       <input type="color" value={color2} onChange={changeColor2}/>
       <p>Copy the below code for your new cool background gradiant!</p>
-      <p>`Linear-gradient(to right, {color1}, {color2})`</p>
+      <p>`Linear-gradient(to right,{color1}, {color2})`</p>
     </div>
   )
 }
@@ -41,18 +42,12 @@ useEffect(() => {
 // })
 
 // const changeColor = (e) =>{
-//   setColors({
-//     ...colors, 
-//     [e.target.name]: e.target.value
-//   })
-// }
+//   setColors({...colors, [e.target.name]: e.target.value})}
 
 // useEffect(() => {
 //   const background = `linear-gradient(to right, ${colors.color1}, ${colors.color2})`;
 //   document.body.style.background = background;
 // }, [colors])
-
-
 
 //   return(
 //     <div className="App">
